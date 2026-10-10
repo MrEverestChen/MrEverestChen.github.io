@@ -12,9 +12,12 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import * as path from "node:path";
 
 export default defineUserConfig({
   base: '/',
+  source:path.resolve(__dirname, '../'),
+  public: path.resolve(__dirname, 'public'),
   lang: 'zh-CN',
   title: 'My Vuepress Site',
   description: '',
