@@ -16,7 +16,7 @@ import * as path from "node:path";
 
 export default defineUserConfig({
   base: '/',
-  source:path.resolve(__dirname, '../'),
+  source:path.resolve(__dirname, '../demo'),
   public: path.resolve(__dirname, 'public'),
   lang: 'zh-CN',
   title: 'My Vuepress Site',
